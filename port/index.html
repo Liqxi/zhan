@@ -6,19 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
-    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
+    <!-- <div class="preloader">
+      <div class="preloader-content">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+      </div>
+    </div> -->
+    <div class="scroll-up-btn">
+      <i class="fas fa-angle-up"></i>
+    </div>
     <nav class="navbar">
       <div class="max-width">
         <div class="logo">
-          <a href="#">Liq<span>ue.</span></a>
+          <a href="#">Аде<span>ма.</span></a>
         </div>
         <ul class="menu">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a class="a" href="#home">Главная</a></li>
+          <li><a class="a" href="#about">Обо мне</a></li>
+          <li><a class="a" href="#skills">Навыки</a></li>
+          <li><a class="a" href="#contact">Контакты</a></li>
         </ul>
         <div class="menu-btn">
           <i class="fa fa-bars header-bars" aria-hidden="true"></i>
@@ -28,20 +38,17 @@
     <section id="home" class="home">
       <div class="max-width">
         <div class="home-content">
-          <div class="text-1">Hello, my name is</div>
-          <div class="text-2">Nurgaliev Zhanramazan</div>
-          <div class="text-3">and I'm a <span class="typing"></span></div>
+          <div class="text-1">Привет, меня зовут</div>
+          <div class="text-2">Tургали Адема</div>
+          <div class="text-3">и, я <span class="typing"></span></div>
         </div>
       </div>
     </section>
     <section id="about" class="about">
-      <h2 class="title">About Me</h2>
+      <h2 data-aos="fade-up" class="title">Обо мне</h2>
       <div class="about-content">
-        <div class="column-left">
-          <div class="text">
-            I'm <span>Zhanramazan Nurgaliev</span> and
-            <span>Web Developer</span>
-          </div>
+        <div data-aos="fade-right" class="column-left">
+          <div class="text">Я <span>Воспитатель</span></div>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero odio
             ipsa optio quos eos delectus. Ut similique optio aspernatur,
@@ -49,68 +56,37 @@
             accusantium a quibusdam.
           </p>
         </div>
-        <div class="column-right-main">
+        <div
+          data-aos="fade-left"
+          data-aos-delay="300"
+          class="column-right-main"
+        >
           <div class="column-right">
             <div class="right-item">
-              <h4 class="right-text">Birthday: <span> 7 Oct 2005 </span></h4>
+              <h4 class="right-text">
+                День рождение: <span> 9 Июня 2007 </span>
+              </h4>
             </div>
             <div class="right-item">
-              <h4 class="right-text">Country: <span> Kazakhstan </span></h4>
+              <h4 class="right-text">Страна: <span> Казахстан </span></h4>
             </div>
             <div class="right-item">
               <h4 class="right-text">
-                E-mail: <span> ramazan200572@gmail.com </span>
+                E-mail: <span> ademok0707@gmail.com </span>
               </h4>
             </div>
           </div>
           <div class="column-2">
             <div class="right-item">
-              <h4 class="right-text">Age: <span> 17 </span></h4>
+              <h4 class="right-text">Возраст: <span> 15 </span></h4>
             </div>
             <div class="right-item">
-              <h4 class="right-text">City: <span> Almaty </span></h4>
+              <h4 class="right-text">Город: <span> Алматы </span></h4>
             </div>
             <div class="right-item">
               <h4 class="right-text">
-                Phone: <span> +7 (700) 105 07 10 </span>
+                Телефон: <span> +7 (777) 270 62 82 </span>
               </h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="services" class="services">
-      <div class="max-width">
-        <h2 class="title">My services</h2>
-        <div class="serv-content">
-          <div class="card">
-            <div class="box">
-              <i class="fas fa-paint-brush"></i>
-              <div class="text">Web Design</div>
-              <p>
-                Lorem ipsum dolor sit amet conesterjfv,adigsgoepd elit. Rem quia
-                sunt, quasi quo illo enim
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="box">
-              <i class="fas fa-chart-line"></i>
-              <div class="text">Advertising</div>
-              <p>
-                Lorem ipsum dolor sit amet conesterjfv,adigsgoepd elit. Rem quia
-                sunt, quasi quo illo enim
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="box">
-              <i class="fas fa-code"></i>
-              <div class="text">Apps Design</div>
-              <p>
-                Lorem ipsum dolor sit amet conesterjfv,adigsgoepd elit. Rem quia
-                sunt, quasi quo illo enim
-              </p>
             </div>
           </div>
         </div>
@@ -118,10 +94,10 @@
     </section>
     <section id="skills" class="skills">
       <div class="max-width">
-        <h2 class="title">My skills</h2>
+        <h2 data-aos="fade-up" class="title">Мои навыки</h2>
         <div class="skills-content">
-          <div class="column left">
-            <div class="text">My creative skills & experience.</div>
+          <div data-aos="fade-right" class="column left">
+            <div class="text">Мои творческие навыки и опыт.</div>
             <p>
               Lorem ipsum dolor sit amet conesterjfv,adigsgoepd elit. Rem quia
               sunt, quasi quo illo enim Lorem ipsum dolor sit amet
@@ -130,13 +106,12 @@
               sunt, quasi quo illo enim Lorem ipsum dolor sit amet
               conesterjfv,adigsgoepd elit. Rem quia sunt, quasi quo illo enim
             </p>
-            <a href="#">Read more</a>
           </div>
-          <div class="column right">
+          <div data-aos="fade-left" class="column right">
             <div class="bars">
               <div class="info">
-                <span>HTML</span>
-                <span>90%</span>
+                <span>Креативное мышление</span>
+                <span>80%</span>
               </div>
               <div class="line html">
                 <div class="lith"></div>
@@ -144,8 +119,8 @@
             </div>
             <div class="bars">
               <div class="info">
-                <span>CSS</span>
-                <span>75%</span>
+                <span>Быстро нахожу общий язык</span>
+                <span>70%</span>
               </div>
               <div class="line css">
                 <div class="lics"></div>
@@ -153,8 +128,8 @@
             </div>
             <div class="bars">
               <div class="info">
-                <span>JavaScript</span>
-                <span>30%</span>
+                <span>Умение вести себя в критических ситуациях</span>
+                <span>60%</span>
               </div>
               <div class="line java">
                 <div class="lijs"></div>
@@ -164,6 +139,73 @@
         </div>
       </div>
     </section>
+    <section id="contact" class="contact">
+      <div class="max-width">
+        <h2 data-aos="fade-up" class="title">Связаться со мной</h2>
+        <div class="contact-content">
+          <div data-aos="fade-right" class="column left">
+            <div class="text">Связаться</div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero odio
+              ipsa optio quos eos delectus.
+            </p>
+            <div class="icons">
+              <div class="row">
+                <i class="fas fa-user"></i>
+                <div class="info">
+                  <div class="head">Имя</div>
+                  <div class="sub-title">Тургали Адема</div>
+                </div>
+              </div>
+              <div class="row">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="info">
+                  <div class="head">Адрес</div>
+                  <div class="sub-title">Казахстан, Алматы</div>
+                </div>
+              </div>
+              <div class="row">
+                <i class="fas fa-envelope"></i>
+                <div class="info">
+                  <div class="head">E-mail</div>
+                  <div class="sub-title">ademok0707@gmail.com</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-aos="fade-left" data-aos-delay="300" class="column right">
+            <div class="text">Написать мне</div>
+            <form action="#">
+              <div class="fields">
+                <div class="field name">
+                  <input type="text" placeholder="Имя" required />
+                </div>
+                <div class="field E-mail">
+                  <input type="email" placeholder="E-mail" required />
+                </div>
+              </div>
+              <div class="field textarea">
+                <textarea
+                  cols="30"
+                  rows="10"
+                  placeholder=""
+                  required
+                ></textarea>
+              </div>
+              <div class="button">
+                <button type="submit">Отправить сообщение</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <span
+        >сделано в приложений <a href="">VisualStudioCode</a> |
+        <span class="far fa-copyright">2022 All rights reserved.</span></span
+      >
+    </footer>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script
       src="https://kit.fontawesome.com/140219e2b5.js"
@@ -171,5 +213,9 @@
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="./script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
